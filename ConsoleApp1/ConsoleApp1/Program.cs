@@ -6,8 +6,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Enter a number!");
+            string number = Console.ReadLine();
+            int numberParsed = Int16.Parse(number);
+
+            // teen siia if ja else loogikaga vastused
+            // nt kui on alla 50, siis tuleb console writeline vastus
+            if (numberParsed <= 50)
+            {
+                Console.WriteLine("Võrdne või väiksem kui 50");
+            }
+            else
+            {
+                Console.WriteLine("Suurem kui 50");
+            }
+            Console.WriteLine("ERROR");
         }
     }
 }
